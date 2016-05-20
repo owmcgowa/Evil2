@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/amaph2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.guyhembroff.owmcgowa_adm.amaph.CircularProgress
+            android:id="@+id/circular_progress2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tvDateUpdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Username,"
+            android:id="@+id/tvUsernameHere"
+            android:layout_marginTop="41dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" your last entry was on:"
+            android:id="@+id/tvLastEntry"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@+id/tvUsernameHere"
+            android:layout_toRightOf="@+id/tvUsernameHere"
+            android:layout_toEndOf="@+id/tvUsernameHere" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date"
+            android:id="@+id/tvDateUpdate"
+            android:textColor="#ffffff"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/tvLastEntry"
+            android:layout_toLeftOf="@+id/tvAt"
+            android:layout_toStartOf="@+id/tvAt" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training"
+            android:id="@+id/bTraining"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/circular_progress2"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMAPH"
+            android:id="@+id/bServicesBackAMAPH"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/circular_progress2"
+            android:layout_toStartOf="@+id/circular_progress2"
+            android:layout_marginBottom="34dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" at "
+            android:id="@+id/tvAt"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/tvDateUpdate"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time"
+            android:id="@+id/tvTimeUpdate"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/circular_progress2"
+            android:layout_toRightOf="@+id/tvAt"
+            android:layout_toEndOf="@+id/tvAt" />
+
+
+    </RelativeLayout>
+</LinearLayout>

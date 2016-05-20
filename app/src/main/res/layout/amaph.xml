@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/amaph">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvGreeting"
+            android:text="Greeting"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bHealthStatus"
+            android:layout_toStartOf="@+id/bHealthStatus"
+            android:layout_marginTop="44dp" />
+
+        <com.guyhembroff.owmcgowa_adm.amaph.Typewriter
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I am AMAPH, An Advanced Monitoring Application of Personal Health, I have the capabilities of Keeping you updated on current events, your health status, and other services you may need.  Where would you like to begin?"
+            android:id="@+id/tvAmaph"
+            android:textColor="#ffffff"
+            android:maxLines="10"
+            android:singleLine="false"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/tvGreeting"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:id="@+id/bServices"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/tvGreeting"
+            android:layout_alignEnd="@+id/tvGreeting" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Status"
+            android:id="@+id/bHealthStatus"
+            android:layout_alignTop="@+id/bServices"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Events"
+            android:id="@+id/bCurrentEvents"
+            android:layout_below="@+id/bHealthStatus"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/bBackHome"
+            android:layout_below="@+id/bCurrentEvents"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/amaph4">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please enter the following"
+            android:id="@+id/tvTrainingPage"
+            android:layout_marginTop="45dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hours of Sleep"
+            android:id="@+id/tvSleep"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/tvTrainingPage"
+            android:layout_alignLeft="@+id/tvTrainingPage"
+            android:layout_alignStart="@+id/tvTrainingPage"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minutes of Activity"
+            android:id="@+id/tvActivity"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/tvSleep"
+            android:layout_alignLeft="@+id/tvSleep"
+            android:layout_alignStart="@+id/tvSleep"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servings of Bread"
+            android:id="@+id/tvBread"
+            android:layout_below="@+id/tvActivity"
+            android:layout_alignLeft="@+id/tvActivity"
+            android:layout_alignStart="@+id/tvActivity"
+            android:layout_marginTop="19dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servings of Fruit"
+            android:id="@+id/tvFruit"
+            android:layout_below="@+id/tvBread"
+            android:layout_alignLeft="@+id/tvBread"
+            android:layout_alignStart="@+id/tvBread"
+            android:layout_marginTop="19dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servings of Vegetable"
+            android:id="@+id/tvVeg"
+            android:layout_below="@+id/tvFruit"
+            android:layout_alignLeft="@+id/tvFruit"
+            android:layout_alignStart="@+id/tvFruit"
+            android:layout_marginTop="18dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servings of Meat"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/tvVeg"
+            android:layout_alignLeft="@+id/tvVeg"
+            android:layout_alignStart="@+id/tvVeg"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servings of Milk"
+            android:id="@+id/tvMilk"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/bTrainingResult"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/tvMilk"
+            android:layout_toRightOf="@+id/tvMilk"
+            android:layout_toEndOf="@+id/tvMilk" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/bHome"
+            android:layout_alignTop="@+id/bTrainingResult"
+            android:layout_alignLeft="@+id/tvMilk"
+            android:layout_alignStart="@+id/tvMilk" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etSleep"
+            android:layout_above="@+id/tvActivity"
+            android:layout_alignRight="@+id/tvTrainingPage"
+            android:layout_alignEnd="@+id/tvTrainingPage"
+            android:layout_toRightOf="@+id/tvVeg"
+            android:layout_toEndOf="@+id/tvVeg"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etAct"
+            android:layout_below="@+id/etSleep"
+            android:layout_alignLeft="@+id/etSleep"
+            android:layout_alignStart="@+id/etSleep"
+            android:layout_alignRight="@+id/etSleep"
+            android:layout_alignEnd="@+id/etSleep"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etBread"
+            android:layout_below="@+id/tvActivity"
+            android:layout_alignLeft="@+id/etAct"
+            android:layout_alignStart="@+id/etAct"
+            android:layout_alignRight="@+id/etAct"
+            android:layout_alignEnd="@+id/etAct"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etFruit"
+            android:layout_alignBottom="@+id/tvFruit"
+            android:layout_alignLeft="@+id/etBread"
+            android:layout_alignStart="@+id/etBread"
+            android:layout_alignRight="@+id/etBread"
+            android:layout_alignEnd="@+id/etBread"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etVeg"
+            android:layout_alignBottom="@+id/tvVeg"
+            android:layout_toRightOf="@+id/tvVeg"
+            android:layout_alignRight="@+id/etFruit"
+            android:layout_alignEnd="@+id/etFruit"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etMeat"
+            android:layout_above="@+id/tvMilk"
+            android:layout_toRightOf="@+id/tvVeg"
+            android:layout_alignRight="@+id/etVeg"
+            android:layout_alignEnd="@+id/etVeg"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etMilk"
+            android:layout_above="@+id/bTrainingResult"
+            android:layout_alignLeft="@+id/etMeat"
+            android:layout_alignStart="@+id/etMeat"
+            android:layout_alignRight="@+id/etMeat"
+            android:layout_alignEnd="@+id/etMeat"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:backgroundTint="#ffffff" />
+
+    </RelativeLayout>
+</LinearLayout>

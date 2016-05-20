@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue2"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etFirstName"
+        android:layout_gravity="center_horizontal"
+        android:hint="First Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etLastName"
+        android:hint="Last Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etSuperUsername"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etSuperPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etConfirmPassword"
+        android:hint="Confirm Password" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etBirthday"
+        android:hint="Age" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvHeight"
+        android:layout_alignEnd="@+id/tvHeight"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rbMale"
+            android:checked="false"
+            android:layout_weight="0.14"
+            android:onClick="selectUserG"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rbFemale"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:checked="false"
+            android:onClick="selectUserG"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bCreate"
+            android:text="Next"
+            android:onClick="onButtonClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/tvHeight"
+            android:layout_toStartOf="@+id/tvHeight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Weight (lbs)"
+            android:id="@+id/tvWeight"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bCreate"
+            android:layout_toStartOf="@+id/bCreate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Height (inches)"
+            android:id="@+id/tvHeight"
+            android:layout_alignBaseline="@+id/tvWeight"
+            android:layout_alignBottom="@+id/tvWeight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/npHeight"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_below="@+id/tvHeight"
+            android:layout_above="@+id/bCreate" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/npWeight"
+            android:orientation="horizontal"
+            android:layout_above="@+id/bCreate"
+            android:layout_alignLeft="@+id/tvWeight"
+            android:layout_alignStart="@+id/tvWeight"
+            android:layout_alignTop="@+id/npHeight" />
+
+    </RelativeLayout>
+
+</LinearLayout>

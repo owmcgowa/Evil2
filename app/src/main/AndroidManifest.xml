@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guyhembroff.owmcgowa_adm.amaph">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AMAPH"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.MainActivity"
+            android:label="AMAPH">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Login"
+            android:label="Login"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.SignUp"
+            android:label="SignUp"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Home"
+            android:label="Home"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.SuperheroLogin"
+            android:label="SuperheroLogin"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Sidekick"
+            android:label="Sidekick"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Villain"
+            android:label="Villain"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Techville"
+            android:label="Techville"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Training"
+            android:label="Training"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.TrainingResult"
+            android:label="TrainingResult"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Update"
+            android:label="Update"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Amaph"
+            android:label="AMAPH"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.Services"
+            android:label="Services"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.HealthStatus"
+            android:label="Health Status"></activity>
+        <activity
+            android:name="com.guyhembroff.owmcgowa_adm.amaph.CurrentEvents"
+            android:label="Current Events"></activity>
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

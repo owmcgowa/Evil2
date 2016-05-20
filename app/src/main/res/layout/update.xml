@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email"
+            android:id="@+id/tvUemail"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/etUemail"
+            android:layout_alignLeft="@+id/tvUheight"
+            android:layout_alignStart="@+id/tvUheight"
+            android:layout_marginBottom="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Weight"
+            android:id="@+id/tvUweight"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/etUweight"
+            android:layout_alignStart="@+id/etUweight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Height"
+            android:id="@+id/tvUheight"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/etUweight"
+            android:layout_alignLeft="@+id/etUheight"
+            android:layout_alignStart="@+id/etUheight" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etUemail"
+            android:backgroundTint="#ffffff"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/tvUweight"
+            android:layout_alignLeft="@+id/tvUemail"
+            android:layout_alignStart="@+id/tvUemail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etUweight"
+            android:backgroundTint="#ffffff"
+            android:layout_below="@+id/tvUweight"
+            android:layout_alignLeft="@+id/tvUheight"
+            android:layout_alignStart="@+id/tvUheight" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etUheight"
+            android:backgroundTint="#ffffff"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_below="@+id/tvUheight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/bUpdate"
+            android:layout_below="@+id/etUheight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginTop="48dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/bUback"
+            android:layout_alignBottom="@+id/bUpdate"
+            android:layout_alignLeft="@+id/etUheight"
+            android:layout_alignStart="@+id/etUheight" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.guyhembroff.owmcgowa_adm.amaph.Home">
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/menu_update"
+                android:title="Update" />
+
+        </menu>
+
+    </item>
+</menu>
